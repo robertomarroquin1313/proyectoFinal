@@ -1,11 +1,22 @@
 /* Agregar estilos personalizados para la animación */
+.navbar-brand{
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  position: relative;
+  transition: all 0.3s ease;
+}
 .nav-link {
     opacity: 0;
     animation: fadeIn 1s ease forwards;
     position: relative;
     transition: all 0.3s ease;
   }
-  
+   .container{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    position: relative;
+    transition: all 0.3s ease;
+   }
 
   @keyframes fadeIn {
     0% {
@@ -37,6 +48,4 @@
     transform: scaleX(1);
   }
 
-  svg{
-    margin: 25px;
-  }
+ 
