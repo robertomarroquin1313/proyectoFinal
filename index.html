@@ -13,6 +13,7 @@
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="css/Style.css">
 </head>
+<script type="text/JavaScript" src="swiper.js"></script>
 
 <body class="bg-secondary">
 
@@ -56,7 +57,7 @@
         </div>
     </nav>
     <br>
-
+       <h1 align="center">Preventas</h1>
     <!-- Slider main container -->
     <div class="swiper">
         <!-- Additional required wrapper -->
@@ -111,7 +112,70 @@
         </div>
     </div>
 
-    <p>esto es un commit de reneBranch</p>
+
+    <div class="container">
+        <br>
+        <h5>CINEPOLIS</h5>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="C:\Users\User\Documents\GitHub\proyectoFinal\images/Fastx.jpg" class="card-img-top" alt="Rapidos y Furiosos X" width="50" height="600">
+                    <div class="card-body">
+                        <h5 class="card-title">Rapidos y Furiosos X</h5>
+                        <p class="card-text">Dominic Toretto ahora tiene la responsabilidad de proteger a su familia de un nuevo  villano llamado Dante (Jason Momoa),
+                             el cual resulta ser el hijo del antiguo mafioso y narcotraficante brasileño Hernán Reyes, quien ha estado planeando su venganza por la muerte de su padre durante los últimos 
+                             doce años . </p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="C:\Users\User\Documents\GitHub\proyectoFinal\images/sirenita.jpg" class="card-img-top" alt="La Sirenita" width="50"
+                        height="600">
+                    <div class="card-body">
+                        <h5 class="card-title">La Sirenita</h5>
+                        <p class="card-text">Ariel, desea saber más sobre el mundo más allá del mar y,
+                             mientras visita la superficie, se enamora del Príncipe Eric. Si bien las sirenas tienen prohibido interactuar con los humanos,
+                              Así, hace un trato con la  bruja del mar, Úrsula, que le da la oportunidad de experimentar la vida en la tierra.
+                             </p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="C:\Users\User\Documents\GitHub\proyectoFinal\images/SAO.jpg" class="card-img-top" alt="SAO2 - Scherzo de una profunda oscuridad" width="50"
+                        height="600">
+                    <div class="card-body">
+                        <h5 class="card-title">SAO2 - Scherzo de una profunda oscuridad</h5>
+                        <p class="card-text">Han pasado dos meses desde que comenzó el juego mortal, y Kirito y Asuna han seguido progresando.
+                             Se detienen en busca de un tesoro, pero luego deben enfrentarse al monstruo menos favorito de Asuna.</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -120,27 +184,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Parámetros opcionales
-            direction: 'horizontal',
-            loop: true,
-
-            // Paginación
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Botones de navegación
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // Barra de desplazamiento
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
+     initializeSwiper()
     </script>
 
 </body>
