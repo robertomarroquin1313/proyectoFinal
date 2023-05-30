@@ -37,8 +37,17 @@
     transform-origin: left;
   }
 
+  .bg-image {
+    background-image: url("/proyectoFinal/images/fondos/imgbg4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
-
+.swiper{
+  width: 800px;
+  height: 300px;
+}
   .nav-link:hover::before {
     transform: scaleX(1);
   }
@@ -59,3 +68,11 @@
     position: relative;
     bottom: 10px;
   }
+
+  /*Registrar Usuario*/
+  
+
+
+.form{
+  background-color: purple;
+}
