@@ -38,7 +38,7 @@
   }
 
   .bg-image {
-    background-image: url("/Users/rober/OneDrive/Documentos/proyectoFinal/images/fondos/imgbg4.jpg");
+    background-image: url("/proyectoFinal/images/fondos/imgbg4.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
