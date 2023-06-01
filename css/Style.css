@@ -42,6 +42,9 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: auto;
+    width: auto;
+    
 }
 
 .swiper{
@@ -73,6 +76,87 @@
   
 
 
-.form{
-  background-color: purple;
+
+  .form{
+  
+    background-color: #9370D8 ;
+    
+    justify-content: center;
+    align-items: center;
+  
+
+
+    width:60%;
+    height:580px ;
+
+    max-height: 1000px;
+    max-width: 400px;
+  
+    padding: 3em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
+    
+  }
+  
+  .body{
+    background-size: 20px 20px;
+    background-position: 00, 10px 10px;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  #encaform{
+    align-content: center;
+    color: black;
+    align-items: center;
+
+  }
+
+  #formula{
+    margin: auto;
+  }
+  
+
+
+/*login*/
+
+.formlogin{
+  
+  background-color: #222121 ;
+  
+  justify-content: center;
+  align-items: center;
+
+
+
+  width:60%;
+  height:400px ;
+
+  max-height: 1000px;
+  max-width: 400px;
+
+  padding: 3em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
+  
+}
+
+
+#encaform{
+  align-content: center;
+  color: black;
+  align-items: center;
+
+}
+
+#formula{
+  margin: auto;
+}
+
+#btnregistra{
+margin-left: 95px;
+}
+
+#btnenvi{
+  width: 100px;
 }
