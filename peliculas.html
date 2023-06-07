@@ -37,12 +37,20 @@
             <div class="collapse navbar-collapse justify-content-end" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn text-white dropdown-toggle nav-link active" type="button" data-bs-toggle="dropdown" aria-expanded="false">USUARIO</button>
+                            <ul class="dropdown-menu">
+                              <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Registro">Registrarse</button></li>
+                              <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Login">Iniciar Sesion</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="http://127.0.0.1:5500/index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">PELICULAS</a>
+                        <a class="nav-link active" href="http://127.0.0.1:5500/peliculas.html">PELICULAS</a>
                     </li>
-                
                     <li class="nav-item">
                         <a class="nav-link active" href="#">CATEGORIAS</a>
                     </li>
@@ -50,13 +58,7 @@
                         <a class="nav-link active" href="#">CONTACTANOS</a>
                     </li>
                     <li class="nav-item">
-                        <div class="dropdown">
-                            <button class="btn text-white dropdown-toggle nav-link active" type="button" data-bs-toggle="dropdown" aria-expanded="false">USUARIO</button>
-                            <ul class="dropdown-menu">
-                              <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Registro">Registrarse</button></li>
-                              <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Login">Iniciar Sesion</button></li>
-                            </ul>
-                          </div>
+                        <a><img src="C:\Users\Ariel Carbajal\Documents\GitHub\images\carrito.png" width="40" height="40"  alt="carrito"></a>                        
                     </li>
                 </ul>
             </div>
@@ -141,7 +143,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="/Documentos/proyectoFinal/images/mario.jpg" class="card-img-top" alt="MARIO BROS" width="50" height="400">
+                    <img src="C:\Users\Ariel Carbajal\Documents\GitHub\images" class="card-img-top" alt="MARIO BROS" width="50" height="400">
                     <div class="card-body">
                         <h5 class="card-title">Super Mario Bros</h5>
 <!-------------DE AQUI VAS A COPIAR DESDE EL DATA-BS-TOGGLE="MODAL" HASTA DONDE DICE "#MODALP1"-------------------------------------------------------------------------------------------------------------------------------------------->                        
@@ -152,29 +154,18 @@
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modalp1Label">Super Mario Bros Comparativa</h1>
+                            <h1 class="modal-title fs-5" id="modalp1Label">Super Mario Bros</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">CINEMARK</button>
-                                    <ul class="dropdown-menu">
-                                      <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#granvi">Cinemark La Gran Via</button></li>
-                                      <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sanmi">Cinemark San Miguel</button></li>
-                                      <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#metro">Cinemark Metrocentro</button></li>
-                                    </ul>
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">CINEPOLIS</button>
-                                    <ul class="dropdown-menu">
-                                      <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#granvi">Cinepolis Galerias San Salvador</button></li>
-                                      <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sanmi">Cinepolis Multiplaza San Salvador</button></li>
-                                      <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#metro">Cinepolis VIP Galerias San Salvador</button></li>
-                                      <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#metro">Cinepolis Metrocentro Santa Ana</button></li>
-                                    </ul>
+                                <button class="btn btn-primary" type="submit">Comprar</button>
                             </div>
                           </div>
                         </div>
                       </div>
+                    <script></script>
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->                      
                 </div>
             </div>
