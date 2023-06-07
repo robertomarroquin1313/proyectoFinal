@@ -160,3 +160,43 @@ margin-left: 95px;
 #btnenvi{
   width: 100px;
 }
+
+/*categorias*/
+
+        .cat {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .category {
+            display: none;
+        }
+
+        .category.show {
+            display: block;
+        }
+    
+        
