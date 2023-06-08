@@ -138,12 +138,12 @@
 
 
     <div class="container">
-        <h1>COMPARACION</h1>
+        <center><h1 class="bg-white">NUESTRAS FUNCIONES</h1></center>
         <br>
         <div class="row">
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="C:\Users\Ariel Carbajal\Documents\GitHub\images" class="card-img-top" alt="MARIO BROS" width="50" height="400">
+                    <img src="C:\Users\Ariel Carbajal\Documents\GitHub\images\mario.jpg" class="card-img-top" alt="MARIO BROS" width="50" height="400">
                     <div class="card-body">
                         <h5 class="card-title">Super Mario Bros</h5>
 <!-------------DE AQUI VAS A COPIAR DESDE EL DATA-BS-TOGGLE="MODAL" HASTA DONDE DICE "#MODALP1"-------------------------------------------------------------------------------------------------------------------------------------------->                        
@@ -158,9 +158,18 @@
                             <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-bodyp1 bg-secondary text-white">
+                                <ul class="cat">
+                                    <li><a href="#" onclick="showCategory('Lun')">Lunes</a></li>
+                                    <li><a href="#" onclick="showCategory('Mar')">Martes</a></li>
+                                    <li><a href="#" onclick="showCategory('Mie')">Miercoles</a></li>
+                                    <li><a href="#" onclick="showCategory('Jue')">Jueves</a></li>
+                                    <li><a href="#" onclick="showCategory('Vie')">Viernes</a></li>
+                                    <li><a href="#" onclick="showCategory('Sab')">Sabado</a></li>
+                                </ul>
                                 <h2>HORARIOS</h2>
-                                Lunes, Miercoles 7:00-9:00, 11:00-13:00, 15:00-17:00<br>
-                                Martes, Jueves, Viernes 8:00-10:00, 12:00-14:00, 16:00-18:00<br>
+                                <div id="Lun" class="category">
+                                    7:00
+                                </div>
                             </div>
                             <div class="modal-footer bg-dark">
                                 <button class="btn btn-primary" type="submit">Comprar</button>
@@ -168,13 +177,23 @@
                           </div>
                         </div>
                       </div>
-                    <script></script>
+                      <script>
+                        function showCategory(categoryName) {
+                            var categories = document.getElementsByClassName('category');
+                            for (var i = 0; i < categories.length; i++) {
+                                categories[i].classList.remove('show');
+                            }
+                    
+                            var category = document.getElementById(categoryName);
+                            category.classList.add('show');
+                        }
+                    </script>
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->                      
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="Documentos/proyectoFinal/images/ggV3.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
+                    <img src="C:\Users\Ariel Carbajal\Documents\GitHub\images\ggV3.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
                         height="400">
                     <div class="card-body">
                         <h5 class="card-title">Guardianes Galaxia Vol 3</h5>
