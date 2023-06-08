@@ -38,7 +38,6 @@
   }
 
 
-
   .nav-link:hover::before {
     transform: scaleX(1);
   }
