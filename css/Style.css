@@ -37,6 +37,14 @@
     transform-origin: left;
   }
 
+  .modal-bodyp1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .modal-bodyp1::h1{
+    text-align: center;
+  }
 
   .nav-link:hover::before {
     transform: scaleX(1);
