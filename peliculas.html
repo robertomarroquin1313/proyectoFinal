@@ -160,16 +160,32 @@
                             <div class="modal-bodyp1 bg-secondary text-white">
                                 <ul class="cat">
                                     <li><a onclick="showCategory('Lun')">Lunes</a></li>
-                                    <li><a href="#" onclick="showCategory('Mar')">Martes</a></li>
-                                    <li><a href="#" onclick="showCategory('Mie')">Miercoles</a></li>
-                                    <li><a href="#" onclick="showCategory('Jue')">Jueves</a></li>
-                                    <li><a href="#" onclick="showCategory('Vie')">Viernes</a></li>
-                                    <li><a href="#" onclick="showCategory('Sab')">Sabado</a></li>
+                                    <li><a onclick="showCategory('Mar')">Martes</a></li>
+                                    <li><a onclick="showCategory('Mie')">Miercoles</a></li>
+                                    <li><a onclick="showCategory('Jue')">Jueves</a></li>
+                                    <li><a onclick="showCategory('Vie')">Viernes</a></li>
+                                    <li><a onclick="showCategory('Sab')">Sabado</a></li>
                                 </ul><br>
                                 <h2>HORARIOS</h2><br>
-                                <div id="Lun" class="category">
-                                    7:00<br>
-                                    11:00<br>
+                                <div class="Horario">
+                                    <div id="Lun" class="category">
+                                        7:30 11:00 14:30 16:00 18:15 20:15<br><br>
+                                    </div>
+                                    <div id="Mar" class="category">
+                                        8:00 12:15 15:00 18:30 19:15 21:00<br><br>
+                                    </div>
+                                    <div id="Mie" class="category">
+                                        10:00 12:15 13:00 15:30 17:15 20:00<br><br>
+                                    </div>
+                                    <div id="Jue" class="category">
+                                        9:00 11:15 14:00 16:30 18:15 20:30<br><br>
+                                    </div>
+                                    <div id="Vie" class="category">
+                                        7:30 11:00 14:30 16:00 18:15 20:15<br><br>
+                                    </div>
+                                    <div id="Sab" class="category">
+                                        8:00 12:15 15:00 18:30 19:15 21:00<br><br>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer bg-dark">
@@ -178,17 +194,7 @@
                           </div>
                         </div>
                       </div>
-                      <script>
-                        function showCategory(categoryName) {
-                            var categories = document.getElementsByClassName('category');
-                            for (var i = 0; i < categories.length; i++) {
-                                categories[i].classList.remove('show');
-                            }
-                    
-                            var category = document.getElementById(categoryName);
-                            category.classList.add('show');
-                        }
-                    </script>
+                      
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->                      
                 </div>
             </div>
@@ -198,8 +204,52 @@
                         height="400">
                     <div class="card-body">
                         <h5 class="card-title">Guardianes Galaxia Vol 3</h5>
-                        <a class="btn btn-primary">Ver detalles</a>
+                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalp2">Ver detalles</a>
                     </div>
+                    <div class="modal fade" id="modalp2" tabindex="-1" aria-labelledby="modalp2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                            <h1 class="modal-title fs-5" id="modalp2Label">Guardianes de la Galaxia</h1>
+                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-bodyp2 bg-secondary text-white">
+                                <ul class="cat">
+                                    <li><a onclick="showCategory('Lun')">Lunes</a></li>
+                                    <li><a onclick="showCategory('Mar')">Martes</a></li>
+                                    <li><a onclick="showCategory('Mie')">Miercoles</a></li>
+                                    <li><a onclick="showCategory('Jue')">Jueves</a></li>
+                                    <li><a onclick="showCategory('Vie')">Viernes</a></li>
+                                    <li><a onclick="showCategory('Sab')">Sabado</a></li>
+                                </ul><br>
+                                <h2>HORARIOS</h2><br>
+                                <div class="Horario">
+                                    <div id="Lun" class="category">
+                                        7:30 11:00 14:30 16:00 18:15 20:15<br><br>
+                                    </div>
+                                    <div id="Mar" class="category">
+                                        8:00 12:15 15:00 18:30 19:15 21:00<br><br>
+                                    </div>
+                                    <div id="Mie" class="category">
+                                        10:00 12:15 13:00 15:30 17:15 20:00<br><br>
+                                    </div>
+                                    <div id="Jue" class="category">
+                                        9:00 11:15 14:00 16:30 18:15 20:30<br><br>
+                                    </div>
+                                    <div id="Vie" class="category">
+                                        7:30 11:00 14:30 16:00 18:15 20:15<br><br>
+                                    </div>
+                                    <div id="Sab" class="category">
+                                        8:00 12:15 15:00 18:30 19:15 21:00<br><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer bg-dark">
+                                <button class="btn btn-primary" type="submit">Comprar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -234,7 +284,17 @@
             },
         });
     </script>
-
+                    <script>
+                        function showCategory(categoryName) {
+                            var categories = document.getElementsByClassName('category');
+                            for (var i = 0; i < categories.length; i++) {
+                                categories[i].classList.remove('show');
+                            }
+                    
+                            var category = document.getElementById(categoryName);
+                            category.classList.add('show');
+                        }
+                    </script>
 </body>
 
 </html>
