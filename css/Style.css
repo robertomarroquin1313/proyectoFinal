@@ -42,10 +42,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
-  .modal-bodyp1::h1{
-    text-align: center;
-  }
-
   .nav-link:hover::before {
     transform: scaleX(1);
   }
@@ -72,6 +68,7 @@
     margin: auto;
     padding: 0;
     overflow: hidden;
+    background-color: #454652;
 }
 
 li {
