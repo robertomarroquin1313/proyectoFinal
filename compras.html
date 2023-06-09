@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOME - CineXperience</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body class="bg-secondary">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="25" fill="currentColor"
+                    class="bi bi-camera-reels" viewBox="0 0 16 16">
+                    <!-- contenido del SVG -->
+                    <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
+                    <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                    <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/> 
+                </svg>
+                <span class="text-warning">CineXperience</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn text-white dropdown-toggle nav-link active" type="button" data-bs-toggle="dropdown" aria-expanded="false">USUARIO</button>
+                            <ul class="dropdown-menu">
+                              <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Registro">Registrarse</button></li>
+                              <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Login">Iniciar Sesion</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="file:///C:/Users/Ariel%20Carbajal/Documents/GitHub/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="file:///C:/Users/Ariel%20Carbajal/Documents/GitHub/peliculas.html">PELICULAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">CATEGORIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">CONTACTANOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <!-- Modal para Registro -->
+    <div class="modal fade" id="Registro" tabindex="-1" aria-labelledby="Registro" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="Registro">Registro de Usuario</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-2">
+                    <label for="correo" class="form_group">Nombre</label>
+                    <input id="correo"  class="form-control" type="text" placeholder="Roberto" required>
+                </div>
+                    
+                <div class="mb-2">
+                            <label for="contraseña" class="form_group">Apellido</label>
+                            <input id="contraseña"  class="form-control" type="text" placeholder="Marroquin" required>
+                </div>
+                
+                <div class="mb-2">
+                    <label for="correo" class="form_group">Correo</label>
+                    <input id="correo"  class="form-control" type="text" placeholder="Ejemplo123@exmple.com" required>
+                </div>
+               
+                <div class="mb-2">
+                    <label for="contraseña" class="form_group">Contraseña</label>
+                    <input id="contraseña"  class="form-control" type="password" placeholder="Rambo123#" required>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-secondary">
+                Enviar
+              </button>
+            </div>
+        </form>
+          </div>
+        </div>
+      </div>
+
+    <!-- Modal para Login-->
+<div class="modal fade" id="Login" tabindex="-1" aria-labelledby="Login" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="Login">Inicio Sesion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-2">
+                <label for="correo" class="form_group">Correo</label>
+                <input id="correo"  class="form-control" type="text" placeholder="Ejemplo123@exmple.com" required>
+            </div>
+            
+            <div class="mb-2">
+                <label for="contraseña" class="form_group">Contraseña</label>
+                <input id="contraseña"  class="form-control" type="password" placeholder="Rambo123#" required>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary">
+            Enviar
+          </button>
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+  <div class="movie" id="Super Mario Bros">
+    <center><h1 class="text-white">Comprar Boletos</h1></center>   
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="C:\Users\Ariel Carbajal\Documents\GitHub\images\mario.jpg" class="card-img-top" alt="MARIO BROS" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title" align="center">Super Mario Bros</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="text-white">
+                    <iframe width="874" height="400" src="https://www.youtube.com/embed/RoVNe0bDchw" title="Super Mario Bros  La Película | Trailer Oficial | En 2023 en Cinemark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>La pelicula cuenta la historia de Mario y Luigi,
+                         dos hermanos que viajan a un mundo oculto para rescatar a la Princesa Peach,
+                         capturada por el malvado Rey Bowser.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <h5 class="text-warning bg-dark" style="width: 221px;">HORARIOS DISPONIBLES</h5>
+                <select id="combo-box1" class="form-control" style="width: 150px;">
+                  <option value="opcion1">Escoge tu horario</option>
+                  <option value="opcion2">7:15 am</option>
+                  <option value="opcion3">10:00 am</option>
+                  <option value="opcion4">12:30 pm</option>
+                  <option value="opcion5">1:30 pm</option>
+                  <option value="opcion6">4:45 pm</option>
+                  <option value="opcion7">6:00 pm</option>
+                </select>
+              </div>
+              <div class="col">
+                <h5 class="text-warning bg-dark" style="width: 260px;">MODALIDADES DISPONIBLES</h5>
+                <select id="combo-box2" class="form-control" style="width: 160px;">
+                  <option value="opcion1">Escoge tu formato</option>  
+                  <option value="opcion1">2D</option>
+                  <option value="opcion2">3D</option>
+                </select>
+              </div>
+              <div class="col">
+                <h5 class="text-warning bg-dark" style="width: 96px;">CANTIDAD</h5>
+                <select id="combo-box3" class="form-control" style="width: 160px;">
+                  <option value="opcion1">Escoge la cantidad</option>  
+                  <option value="opcion2">1</option>
+                  <option value="opcion3">2</option>
+                  <option value="opcion4">3</option>
+                  <option value="opcion5">4</option>
+                  <option value="opcion6">5</option>
+                  <option value="opcion7">6</option>
+                </select>
+              </div>
+              <div class="col">
+                <h5 class="text-warning bg-dark" style="width: 66px;">PRECIO</h5>
+                <input type="text" class="form-control" style="width: 150px;" id="casilla" value="" readonly>
+              </div>
+            </div>
+          </div>
+        </div>  
+    </div>    
+<!------------------------------------------------------------------------------------------------------------------------------------>          
+<!------------------------------------------------------------------------------------------------------------------------------------>
+    <div class="movie" id="Guardianes de la Galaxia" >
+        <center><h1 class="text-white">Comprar Boletos</h1></center>   
+        <br>
+        <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="C:\Users\Ariel Carbajal\Documents\GitHub\images\ggV3.jpg" class="card-img-top" 
+                alt="Guardianes Galaxia Vol 3" width="50" height="400">
+                <div class="card-body">
+                    <h5 class="card-title" align="center">Guardianes Galaxia Vol 3</h5>
+                </div>
+            </div>
+        </div>
+            <div class="col">
+                <div class="row">
+                    <div class="text-white">
+                        <iframe width="874" height="400" src="https://www.youtube.com/embed/qAkCoX760xQ" 
+                        title="#GuardianesDeLaGalaxia Vol. 3. | Tráiler Oficial | Subtitulado" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                        <p>La querida banda de Guardianes se instala en Knowhere. 
+                            Pero sus vidas no tardan en verse alteradas por los ecos del 
+                            turbulento pasado de Rocket.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h5 class="text-warning bg-dark" style="width: 221px;">HORARIOS DISPONIBLES</h5>
+                    <select id="combo-box1" class="form-control" style="width: 150px;">
+                      <option value="opcion1">Escoge tu horario</option>
+                      <option value="opcion2">8:15 am</option>
+                      <option value="opcion3">11:00 am</option>
+                      <option value="opcion4">1:30 pm</option>
+                      <option value="opcion5">3:15 pm</option>
+                      <option value="opcion6">5:45 pm</option>
+                      <option value="opcion7">7:00 pm</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <h5 class="text-warning bg-dark" style="width: 260px;">MODALIDADES DISPONIBLES</h5>
+                    <select id="combo-box2" class="form-control" style="width: 150px;">
+                        <option value="opcion1">Escoge tu formato</option>  
+                        <option value="opcion1">2D</option>
+                        <option value="opcion2">3D</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <h5 class="text-warning bg-dark" style="width: 96px;">CANTIDAD</h5>
+                    <select id="combo-box3" class="form-control" style="width: 160px;">
+                      <option value="opcion1">Escoge la cantidad</option>  
+                      <option value="opcion2">1</option>
+                      <option value="opcion3">2</option>
+                      <option value="opcion4">3</option>
+                      <option value="opcion5">4</option>
+                      <option value="opcion6">5</option>
+                      <option value="opcion7">6</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <h5 class="text-warning bg-dark" style="width: 66px;">PRECIO</h5>
+                    <input type="text" class="form-control" style="width: 150px;" id="casilla" value="" readonly>
+                  </div>
+                </div>
+              </div>
+            </div>  
+        </div>
+    <!------------------------------------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Parámetros opcionales
+            direction: 'horizontal',
+            loop: true,
+
+            // Paginación
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Botones de navegación
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Barra de desplazamiento
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <script>
+        var comboBox = document.getElementById("combo-box");
+
+// Agregar evento de cambio al combo box
+comboBox.addEventListener("change", function() {
+  // Obtener el valor seleccionado
+  var selectedValue = comboBox.value;
+  
+  // Realizar alguna acción basada en el valor seleccionado
+  console.log("Opción seleccionada: " + selectedValue);
+});
+    </script>
+
+<script>
+    var params = new URLSearchParams(window.location.search);
+    var movieName = params.get('movie');
+
+    // Mostrar u ocultar elementos basados en la película seleccionada
+    if (movieName === 'Super Mario Bros') {
+        // Mostrar los detalles de la película "Rapidos y Furiosos X"
+        document.getElementById('Super Mario Bros').style.display = 'block';
+        document.getElementById('Guardianes de la Galaxia').style.display = 'none';
+        document.getElementById('Sirenita').style.display = 'none';
+    } else if (movieName === 'Guardianes de la Galaxia') {
+        // Mostrar los detalles de la película "SAO2 - Scherzo de una profunda oscuridad"
+        document.getElementById('Super Mario Bros').style.display = 'none';
+        document.getElementById('Guardianes de la Galaxia').style.display = 'block';
+        document.getElementById('Sirenita').style.display = 'none';
+    } else if (movieName === 'Sirenita') {
+        // Mostrar los detalles de la película "La Sirenita"
+        document.getElementById('Super Mario Bros').style.display = 'none';
+        document.getElementById('Guardianes de la Galaxia').style.display = 'none';
+        document.getElementById('Sirenita').style.display = 'block';
+    }
+
+    </script>
+</body>
+
+</html>
