@@ -42,6 +42,12 @@
     margin-right: 25px;
   }
 
+  .bg-image {
+    background-image: url("C:\Users\Ariel Carbajal\Documents\GitHub\images\fondos");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
   .nav-link:hover::before {
     transform: scaleX(1);
   }
