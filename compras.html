@@ -138,7 +138,7 @@
   <center><h1 class="text-white">Comprar Boletos</h1></center>   
   <br>
   <div class="row">
-  <div class="col-md-3">
+    <div class="col-md-3">
       <div class="card mb-4">
           <img src="C:\Users\Ariel Carbajal\Documents\GitHub\images\transformers.jpg" class="card-img-top" 
           alt="Transformers" width="50" height="400">
@@ -146,14 +146,14 @@
               <h5 class="card-title" align="center">Transformers</h5>
           </div>
       </div>
-  </div>
+    </div>
       <div class="col">
           <div class="row">
               <div class="text-white">
                 <iframe width="874" height="400" src="https://www.youtube.com/embed/lNXo34uQM4s"
                 title="TRANSFORMERS: EL DESPERTAR DE LAS BESTIAS | Estreno en Cinemark: 8 de junio" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen style="margin: auto;"></iframe>
                   <p>Transformers. El despertar de las bestias llevara al publico
                     a una aventura alrededor del mundo en los 90 con los
                     Autobots e introducira a una nueva generacion
@@ -162,48 +162,83 @@
               </div>
           </div>
       </div>
-      <div class="container">
-          <div class="row">
-            <div class="col">
-              <h5 class="text-warning bg-dark" style="width: 221px;">HORARIOS DISPONIBLES</h5>
-              <select id="combo-box1" class="form-control" style="width: 150px;">
-                <option value="opcion1">Escoge tu horario</option>
-                <option value="opcion2">8:15 am</option>
-                <option value="opcion3">11:00 am</option>
-                <option value="opcion4">1:30 pm</option>
-                <option value="opcion5">3:15 pm</option>
-                <option value="opcion6">5:45 pm</option>
-                <option value="opcion7">7:00 pm</option>
-              </select>
-            </div>
-            <div class="col">
-              <h5 class="text-warning bg-dark" style="width: 260px;">MODALIDADES DISPONIBLES</h5>
-              <select id="combo-box2" class="form-control" style="width: 150px;">
-                  <option value="opcion1">Escoge tu formato</option>  
-                  <option value="opcion1">2D</option>
-                  <option value="opcion2">3D</option>
-              </select>
-            </div>
-            <div class="col">
-              <h5 class="text-warning bg-dark" style="width: 96px;">CANTIDAD</h5>
-              <select id="combo-box3" class="form-control" style="width: 160px;">
-                <option value="opcion1">Escoge la cantidad</option>  
-                <option value="opcion2">1</option>
-                <option value="opcion3">2</option>
-                <option value="opcion4">3</option>
-                <option value="opcion5">4</option>
-                <option value="opcion6">5</option>
-                <option value="opcion7">6</option>
-              </select>
-            </div>
-            <div class="col">
-              <h5 class="text-warning bg-dark" style="width: 66px;">PRECIO</h5>
-              <input type="text" class="form-control" style="width: 150px;" id="casilla" value="" readonly>
-            </div>
+  </div>  
+  <div class="container form-control bg-dark"><br>
+    <form>
+        <div class="row">
+          <div class="col">
+            <h5 class="text-warning">HORARIOS DISPONIBLES</h5>
+            <select id="combo-box1" class="form-select" style="width: 180px;" required>
+              <option value="">Escoge tu horario</option>
+              <option value="opcion1">8:15 am</option>
+              <option value="opcion2">11:00 am</option>
+              <option value="opcion3">1:30 pm</option>
+              <option value="opcion4">3:15 pm</option>
+              <option value="opcion5">5:45 pm</option>
+              <option value="opcion6">7:00 pm</option>
+            </select>
+          </div>
+          <div class="col">
+            <h5 class="text-warning" style="width: 300px;">MODALIDADES DISPONIBLES</h5>
+            <select id="combo-box2" class="form-select" style="width: 180px;" required>
+                <option value="">Escoge tu formato</option>  
+                <option value="opcion1">2D</option>
+                <option value="opcion2">3D</option>
+            </select>
+          </div>
+          <div class="col">
+            <h5 class="text-warning" style="width: 260px;">CANTIDAD DE ENTRADAS</h5>
+            <select id="combo-box3" class="form-select" style="width: 180px;" required>
+              <option value="">Escoge la cantidad</option>  
+              <option value="opcion1">1</option>
+              <option value="opcion2">2</option>
+              <option value="opcion3">3</option>
+              <option value="opcion4">4</option>
+              <option value="opcion5">5</option>
+              <option value="opcion6">6</option>
+            </select>
+          </div>
+          <div class="col">
+            <h5 class="text-warning">TOTAL A PAGAR</h5>
+            <input type="text" class="form-control" style="width: 150px;" id="casilla" required>
+          </div>
+        </div><br><br>
+      <div class="mb-3">
+        <label for="gmail" class="form-label text-warning" style="font-size: 20px;">INGRESA TU EMAIL</label>
+        <input type="email" class="form-control" style="width: 300px;" id="gmail" placeholder="Ejemplo123@gmail.com" required>
+      </div><br>
+      <div class="row">
+        <div class="col">
+          <div class="mb-3">
+            <label for="nomtitular" class="form-label text-warning" style="font-size: 20px;">NOMBRE DEL TITULAR DE LA CUENTA</label>
+            <input type="text" class="form-control" style="width: 170px;" id="nomtitular" placeholder="Ariel Carbajal" required>
           </div>
         </div>
-      </div>  
-  </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="numtarjeta" class="form-label text-warning" style="font-size: 20px;">NUMERO DE TARJETA</label>
+            <input type="text" class="form-control" style="width: 250px;" id="numtarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+          </div>
+        </div>
+      </div><br>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="fechaven" class="form-label text-warning" style="font-size:20px;">FECHA DE VENCIMIENTO</label>
+              <input type="text" class="form-control" style="width: 80px;" id="fechaven" placeholder="02/06" required>
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="cvc" class="form-label text-warning" style="font-size:20px;">CVC</label>
+              <input type="text" class="form-control" style="width: 70px;" id="cvc" placeholder="XXX" required>
+              <button type="submit" id="botonpagar" class="btn btn-primary" style="float: right;">PAGAR</button>
+            </div>
+          </div>
+        </div> 
+      </form>    
+    </div>
+</div>  
 <!------------------------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------------------------------>
 <div class="movie" id="Spiderman">
@@ -494,7 +529,60 @@ comboBox.addEventListener("change", function() {
         document.getElementById('Transformers').style.display = 'none';
         document.getElementById('Spiderman').style.display = 'block';
     }
+    </script>
 
+    <script>
+      var comboBox2 = document.getElementById('combo-box2');
+      var comboBox3 = document.getElementById('combo-box3');
+
+      // Agrega el evento de cambio a los combo-boxes
+      comboBox2.addEventListener('change', handleComboBoxChange);
+      comboBox3.addEventListener('change', handleComboBoxChange);
+
+      // Función para manejar el cambio en los combo-boxes
+      function handleComboBoxChange() {
+        // Obtén los valores seleccionados de los combo-boxes
+        var formato = comboBox2.value;
+        var cantidad = parseInt(comboBox3.value);
+
+        // Verifica si ambos combo-boxes tienen valores seleccionados
+          if (formato && cantidad) {
+          var totalAPagar;
+
+          if (formato === 'opcion1') { // 2D
+            totalAPagar = cantidad * 5;
+          } else if (formato === 'opcion2') { // 3D
+            totalAPagar = cantidad * 6.5;
+          }
+
+          // Muestra el total a pagar en la casilla correspondiente
+          document.getElementById('casilla').value = totalAPagar;
+        }
+      }
+    </script>
+
+
+
+    <script>
+      var botonPagar = document.getElementById('botonpagar');
+      botonPagar.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      var horario = document.getElementById('combo-box1').value;
+      var formato = document.getElementById('combo-box2').value;
+      var cantidad = document.getElementById('combo-box3').value;
+      var email = document.getElementById('gmail').value;
+      var titular = document.getElementById('nomtitular').value;
+      var numTarjeta = document.getElementById('numtarjeta').value;
+      var fechaVencimiento = document.getElementById('fechaven').value;
+      var cvc = document.getElementById('cvc').value;
+      if (horario && formato && cantidad && email && titular && numTarjeta && fechaVencimiento && cvc) {
+        alert('¡Gracias por comprar en CineXperience, te esperamos en otra ocasion!');
+      window.location.href = 'https://www.ejemplo.com/nueva-pagina';
+      } else {
+      alert('¡Por favor, completa todos los campos para poder pagar!');
+      }
+      }); 
     </script>
 </body>
 
