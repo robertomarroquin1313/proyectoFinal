@@ -134,7 +134,7 @@
   </div>
 <!------------------------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------------------------------>
-<div class="movie" id="Transformers >
+<div class="movie" id="Transformers">
   <center><h1 class="text-white">Comprar Boletos</h1></center>   
   <br>
   <div class="row">
@@ -159,6 +159,76 @@
                     Autobots e introducira a una nueva generacion
                     de Transformers, los Maximals, para unirlos en la
                     batalla existente por la tierra.</p>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+            <div class="col">
+              <h5 class="text-warning bg-dark" style="width: 221px;">HORARIOS DISPONIBLES</h5>
+              <select id="combo-box1" class="form-control" style="width: 150px;">
+                <option value="opcion1">Escoge tu horario</option>
+                <option value="opcion2">8:15 am</option>
+                <option value="opcion3">11:00 am</option>
+                <option value="opcion4">1:30 pm</option>
+                <option value="opcion5">3:15 pm</option>
+                <option value="opcion6">5:45 pm</option>
+                <option value="opcion7">7:00 pm</option>
+              </select>
+            </div>
+            <div class="col">
+              <h5 class="text-warning bg-dark" style="width: 260px;">MODALIDADES DISPONIBLES</h5>
+              <select id="combo-box2" class="form-control" style="width: 150px;">
+                  <option value="opcion1">Escoge tu formato</option>  
+                  <option value="opcion1">2D</option>
+                  <option value="opcion2">3D</option>
+              </select>
+            </div>
+            <div class="col">
+              <h5 class="text-warning bg-dark" style="width: 96px;">CANTIDAD</h5>
+              <select id="combo-box3" class="form-control" style="width: 160px;">
+                <option value="opcion1">Escoge la cantidad</option>  
+                <option value="opcion2">1</option>
+                <option value="opcion3">2</option>
+                <option value="opcion4">3</option>
+                <option value="opcion5">4</option>
+                <option value="opcion6">5</option>
+                <option value="opcion7">6</option>
+              </select>
+            </div>
+            <div class="col">
+              <h5 class="text-warning bg-dark" style="width: 66px;">PRECIO</h5>
+              <input type="text" class="form-control" style="width: 150px;" id="casilla" value="" readonly>
+            </div>
+          </div>
+        </div>
+      </div>  
+  </div>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div class="movie" id="Spiderman">
+  <center><h1 class="text-white">Comprar Boletos</h1></center>   
+  <br>
+  <div class="row">
+  <div class="col-md-3">
+      <div class="card mb-4">
+          <img src="C:\Users\Ariel Carbajal\Documents\GitHub\images\spiderm.jpg" class="card-img-top" 
+          alt="Transformers" width="50" height="400">
+          <div class="card-body">
+              <h5 class="card-title" align="center">Spider-Man</h5>
+          </div>
+      </div>
+  </div>
+      <div class="col">
+          <div class="row">
+              <div class="text-white">
+                <iframe width="874" height="400" src="https://www.youtube.com/embed/0rMbHqrm52c"
+                title="Spider:Man: A Través del Spider-Verso - Tráiler Internacional" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+                  <p>Miles Morales emprende una aventura a traves 
+                    del multiverso con Gwen Stacy y un nuevo equipo de la
+                    Spider People que deben enfrentar a un poderoso villano.</p>
               </div>
           </div>
       </div>
@@ -407,14 +477,22 @@ comboBox.addEventListener("change", function() {
         document.getElementById('Super Mario Bros').style.display = 'block';
         document.getElementById('Guardianes de la Galaxia').style.display = 'none';
         document.getElementById('Transformers').style.display = 'none';
+        document.getElementById('Spiderman').style.display = 'none';
     } else if (movieName === 'Guardianes de la Galaxia') {
         document.getElementById('Super Mario Bros').style.display = 'none';
         document.getElementById('Guardianes de la Galaxia').style.display = 'block';
         document.getElementById('Transformers').style.display = 'none';
+        document.getElementById('Spiderman').style.display = 'none';
     } else if (movieName === 'Transformers') {
         document.getElementById('Super Mario Bros').style.display = 'none';
         document.getElementById('Guardianes de la Galaxia').style.display = 'none';
         document.getElementById('Transformers').style.display = 'block';
+        document.getElementById('Spiderman').style.display = 'none';
+    }else if (movieName === 'Spiderman') {
+        document.getElementById('Super Mario Bros').style.display = 'none';
+        document.getElementById('Guardianes de la Galaxia').style.display = 'none';
+        document.getElementById('Transformers').style.display = 'none';
+        document.getElementById('Spiderman').style.display = 'block';
     }
 
     </script>
