@@ -180,7 +180,7 @@
           </div>
           <div class="col">
             <h5 class="text-warning" style="width: 300px;">MODALIDADES DISPONIBLES</h5>
-            <select id="combo-box2" class="form-select" style="width: 180px;" required>
+            <select id="combo-box2" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
                 <option value="">Escoge tu formato</option>  
                 <option value="opcion1">2D</option>
                 <option value="opcion2">3D</option>
@@ -188,7 +188,7 @@
           </div>
           <div class="col">
             <h5 class="text-warning" style="width: 260px;">CANTIDAD DE ENTRADAS</h5>
-            <select id="combo-box3" class="form-select" style="width: 180px;" required>
+            <select id="combo-box3" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
               <option value="">Escoge la cantidad</option>  
               <option value="opcion1">1</option>
               <option value="opcion2">2</option>
@@ -200,7 +200,7 @@
           </div>
           <div class="col">
             <h5 class="text-warning">TOTAL A PAGAR</h5>
-            <input type="text" class="form-control" style="width: 150px;" id="casilla" required>
+            <input type="text" class="form-control" style="width: 150px;" id="casilla" readonly required>
           </div>
         </div><br><br>
       <div class="mb-3">
@@ -232,7 +232,7 @@
             <div class="mb-3">
               <label for="cvc" class="form-label text-warning" style="font-size:20px;">CVC</label>
               <input type="text" class="form-control" style="width: 70px;" id="cvc" placeholder="XXX" required>
-              <button type="submit" id="botonpagar" class="btn btn-primary" style="float: right;">PAGAR</button>
+              <a href="C:\proyectoFinal/index.html"><button type="submit" id="botonpagar" class="btn btn-primary" style="float: right;">PAGAR</button></a>
             </div>
           </div>
         </div> 
@@ -532,57 +532,23 @@ comboBox.addEventListener("change", function() {
     </script>
 
     <script>
-      var comboBox2 = document.getElementById('combo-box2');
-      var comboBox3 = document.getElementById('combo-box3');
+    function handleComboBoxChange() {
+    var comboBox2 = document.getElementById("combo-box2");
+    var opcionSeleccionada1 = comboBox2.value;
 
-      // Agrega el evento de cambio a los combo-boxes
-      comboBox2.addEventListener('change', handleComboBoxChange);
-      comboBox3.addEventListener('change', handleComboBoxChange);
+    var comboBox3 = document.getElementById("combo-box3");
+    var opcionSeleccionada2 = comboBox3.value;
 
-      // Función para manejar el cambio en los combo-boxes
-      function handleComboBoxChange() {
-        // Obtén los valores seleccionados de los combo-boxes
-        var formato = comboBox2.value;
-        var cantidad = parseInt(comboBox3.value);
+    var totalpago;
 
-        // Verifica si ambos combo-boxes tienen valores seleccionados
-          if (formato && cantidad) {
-          var totalAPagar;
+    if(opcionSeleccionada1 === 'opcion1'){    
+      totalpago = opcionSeleccionada2 * 5;
+    }else if(opcionSeleccionada1 === 'opcion2'){
+      totalpago = opcionSeleccionada2 *6.5;
+    }
 
-          if (formato === 'opcion1') { // 2D
-            totalAPagar = cantidad * 5;
-          } else if (formato === 'opcion2') { // 3D
-            totalAPagar = cantidad * 6.5;
-          }
-
-          // Muestra el total a pagar en la casilla correspondiente
-          document.getElementById('casilla').value = totalAPagar;
-        }
-      }
-    </script>
-
-
-
-    <script>
-      var botonPagar = document.getElementById('botonpagar');
-      botonPagar.addEventListener('click', function(event) {
-      event.preventDefault();
-
-      var horario = document.getElementById('combo-box1').value;
-      var formato = document.getElementById('combo-box2').value;
-      var cantidad = document.getElementById('combo-box3').value;
-      var email = document.getElementById('gmail').value;
-      var titular = document.getElementById('nomtitular').value;
-      var numTarjeta = document.getElementById('numtarjeta').value;
-      var fechaVencimiento = document.getElementById('fechaven').value;
-      var cvc = document.getElementById('cvc').value;
-      if (horario && formato && cantidad && email && titular && numTarjeta && fechaVencimiento && cvc) {
-        alert('¡Gracias por comprar en CineXperience, te esperamos en otra ocasion!');
-      window.location.href = 'https://www.ejemplo.com/nueva-pagina';
-      } else {
-      alert('¡Por favor, completa todos los campos para poder pagar!');
-      }
-      }); 
+    document.getElementById("casilla").value = totalpago;
+    }
     </script>
 </body>
 
