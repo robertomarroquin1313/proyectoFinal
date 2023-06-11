@@ -180,27 +180,27 @@
           </div>
           <div class="col">
             <h5 class="text-warning" style="width: 300px;">MODALIDADES DISPONIBLES</h5>
-            <select id="combo-box2" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
+            <select id="combo-box2p1" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
                 <option value="">Escoge tu formato</option>  
-                <option value="opcion1">2D</option>
-                <option value="opcion2">3D</option>
+                <option value="2D">2D</option>
+                <option value="3D">3D</option>
             </select>
           </div>
           <div class="col">
             <h5 class="text-warning" style="width: 260px;">CANTIDAD DE ENTRADAS</h5>
-            <select id="combo-box3" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
+            <select id="combo-box3p1" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
               <option value="">Escoge la cantidad</option>  
-              <option value="opcion1">1</option>
-              <option value="opcion2">2</option>
-              <option value="opcion3">3</option>
-              <option value="opcion4">4</option>
-              <option value="opcion5">5</option>
-              <option value="opcion6">6</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
             </select>
           </div>
           <div class="col">
             <h5 class="text-warning">TOTAL A PAGAR</h5>
-            <input type="text" class="form-control" style="width: 150px;" id="casilla" readonly required>
+            <input type="text" class="form-control" style="width: 150px;" id="casillap1" value="$" readonly required>
           </div>
         </div><br><br>
       <div class="mb-3">
@@ -232,12 +232,29 @@
             <div class="mb-3">
               <label for="cvc" class="form-label text-warning" style="font-size:20px;">CVC</label>
               <input type="text" class="form-control" style="width: 70px;" id="cvc" placeholder="XXX" required>
-              <a href="C:\proyectoFinal/index.html"><button type="submit" id="botonpagar" class="btn btn-primary" style="float: right;">PAGAR</button></a>
+              <button type="submit" id="botonpagar" class="btn btn-primary" style="float: right;" onclick="verificarFormulario(event)">PAGAR</button>
             </div>
           </div>
         </div> 
-      </form>    
-    </div>
+      </form>  
+      <div class="modal fade" id="modalform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title text-warning" id="exampleModalLabel">CINEXPERIENCE</h5>
+              <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-secondary text-white" align="center">
+              ¡Muchas gracias por tu preferencia, esperamos verte pronto!
+            </div>
+            <div class="modal-footer bg-dark text-warning">
+              <a href="C:\proyectoFinal/index.html" style="color: #ffffff; background-color: #007bff;
+              padding: 10px 20px; text-decoration: none; border-radius: 4px;">PAGAR</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+  </div>
 </div>  
 <!------------------------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------------------------------>
@@ -267,48 +284,100 @@
               </div>
           </div>
       </div>
-      <div class="container">
-          <div class="row">
-            <div class="col">
-              <h5 class="text-warning bg-dark" style="width: 221px;">HORARIOS DISPONIBLES</h5>
-              <select id="combo-box1" class="form-control" style="width: 150px;">
-                <option value="opcion1">Escoge tu horario</option>
-                <option value="opcion2">8:15 am</option>
-                <option value="opcion3">11:00 am</option>
-                <option value="opcion4">1:30 pm</option>
-                <option value="opcion5">3:15 pm</option>
-                <option value="opcion6">5:45 pm</option>
-                <option value="opcion7">7:00 pm</option>
-              </select>
+  </div> 
+  <div class="container form-control bg-dark"><br>
+    <form>
+        <div class="row">
+          <div class="col">
+            <h5 class="text-warning">HORARIOS DISPONIBLES</h5>
+            <select id="combo-box1" class="form-select" style="width: 180px;" required>
+              <option value="">Escoge tu horario</option>
+              <option value="opcion1">8:15 am</option>
+              <option value="opcion2">11:00 am</option>
+              <option value="opcion3">1:30 pm</option>
+              <option value="opcion4">3:15 pm</option>
+              <option value="opcion5">5:45 pm</option>
+              <option value="opcion6">7:00 pm</option>
+            </select>
+          </div>
+          <div class="col">
+            <h5 class="text-warning" style="width: 300px;">MODALIDADES DISPONIBLES</h5>
+            <select id="combo-box2p2" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
+                <option value="">Escoge tu formato</option>  
+                <option value="2D">2D</option>
+                <option value="3D">3D</option>
+            </select>
+          </div>
+          <div class="col">
+            <h5 class="text-warning" style="width: 260px;">CANTIDAD DE ENTRADAS</h5>
+            <select id="combo-box3p2" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
+              <option value="">Escoge la cantidad</option>  
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div class="col">
+            <h5 class="text-warning">TOTAL A PAGAR</h5>
+            <input type="text" class="form-control" style="width: 150px;" id="casillap2" value="$" readonly required>
+          </div>
+        </div><br><br>
+      <div class="mb-3">
+        <label for="gmail" class="form-label text-warning" style="font-size: 20px;">INGRESA TU EMAIL</label>
+        <input type="email" class="form-control" style="width: 300px;" id="gmail" placeholder="Ejemplo123@gmail.com" required>
+      </div><br>
+      <div class="row">
+        <div class="col">
+          <div class="mb-3">
+            <label for="nomtitular" class="form-label text-warning" style="font-size: 20px;">NOMBRE DEL TITULAR DE LA CUENTA</label>
+            <input type="text" class="form-control" style="width: 170px;" id="nomtitular" placeholder="Ariel Carbajal" required>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="numtarjeta" class="form-label text-warning" style="font-size: 20px;">NUMERO DE TARJETA</label>
+            <input type="text" class="form-control" style="width: 250px;" id="numtarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+          </div>
+        </div>
+      </div><br>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="fechaven" class="form-label text-warning" style="font-size:20px;">FECHA DE VENCIMIENTO</label>
+              <input type="text" class="form-control" style="width: 80px;" id="fechaven" placeholder="02/06" required>
             </div>
-            <div class="col">
-              <h5 class="text-warning bg-dark" style="width: 260px;">MODALIDADES DISPONIBLES</h5>
-              <select id="combo-box2" class="form-control" style="width: 150px;">
-                  <option value="opcion1">Escoge tu formato</option>  
-                  <option value="opcion1">2D</option>
-                  <option value="opcion2">3D</option>
-              </select>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="cvc" class="form-label text-warning" style="font-size:20px;">CVC</label>
+              <input type="text" class="form-control" style="width: 70px;" id="cvc" placeholder="XXX" required>
+              <button type="submit" id="botonpagar" class="btn btn-primary" style="float: right;" onclick="verificarFormulario(event)">PAGAR</button>
             </div>
-            <div class="col">
-              <h5 class="text-warning bg-dark" style="width: 96px;">CANTIDAD</h5>
-              <select id="combo-box3" class="form-control" style="width: 160px;">
-                <option value="opcion1">Escoge la cantidad</option>  
-                <option value="opcion2">1</option>
-                <option value="opcion3">2</option>
-                <option value="opcion4">3</option>
-                <option value="opcion5">4</option>
-                <option value="opcion6">5</option>
-                <option value="opcion7">6</option>
-              </select>
+          </div>
+        </div> 
+      </form>  
+      <div class="modal fade" id="modalform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title text-warning" id="exampleModalLabel">CINEXPERIENCE</h5>
+              <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="col">
-              <h5 class="text-warning bg-dark" style="width: 66px;">PRECIO</h5>
-              <input type="text" class="form-control" style="width: 150px;" id="casilla" value="" readonly>
+            <div class="modal-body bg-secondary text-white" align="center">
+              ¡Muchas gracias por tu preferencia, esperamos verte pronto!
+            </div>
+            <div class="modal-footer bg-dark text-warning">
+              <a href="C:\proyectoFinal/index.html" style="color: #ffffff; background-color: #007bff;
+              padding: 10px 20px; text-decoration: none; border-radius: 4px;">PAGAR</a>
             </div>
           </div>
         </div>
       </div>  
-  </div>
+  </div>  
+</div>
 <!------------------------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------------------------------>
   <div class="movie" id="Super Mario Bros">
@@ -333,48 +402,100 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-              <div class="col">
-                <h5 class="text-warning bg-dark" style="width: 221px;">HORARIOS DISPONIBLES</h5>
-                <select id="combo-box1" class="form-control" style="width: 150px;">
-                  <option value="opcion1">Escoge tu horario</option>
-                  <option value="opcion2">7:15 am</option>
-                  <option value="opcion3">10:00 am</option>
-                  <option value="opcion4">12:30 pm</option>
-                  <option value="opcion5">1:30 pm</option>
-                  <option value="opcion6">4:45 pm</option>
-                  <option value="opcion7">6:00 pm</option>
-                </select>
+    </div>
+    <div class="container form-control bg-dark"><br>
+      <form>
+          <div class="row">
+            <div class="col">
+              <h5 class="text-warning">HORARIOS DISPONIBLES</h5>
+              <select id="combo-box1" class="form-select" style="width: 180px;" required>
+                <option value="">Escoge tu horario</option>
+                <option value="opcion1">8:15 am</option>
+                <option value="opcion2">11:00 am</option>
+                <option value="opcion3">1:30 pm</option>
+                <option value="opcion4">3:15 pm</option>
+                <option value="opcion5">5:45 pm</option>
+                <option value="opcion6">7:00 pm</option>
+              </select>
+            </div>
+            <div class="col">
+              <h5 class="text-warning" style="width: 300px;">MODALIDADES DISPONIBLES</h5>
+              <select id="combo-box2p3" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
+                  <option value="">Escoge tu formato</option>  
+                  <option value="2D">2D</option>
+                  <option value="3D">3D</option>
+              </select>
+            </div>
+            <div class="col">
+              <h5 class="text-warning" style="width: 260px;">CANTIDAD DE ENTRADAS</h5>
+              <select id="combo-box3p3" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
+                <option value="">Escoge la cantidad</option>  
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+            <div class="col">
+              <h5 class="text-warning">TOTAL A PAGAR</h5>
+              <input type="text" class="form-control" style="width: 150px;" id="casillap3" value="$" readonly required>
+            </div>
+          </div><br><br>
+        <div class="mb-3">
+          <label for="gmail" class="form-label text-warning" style="font-size: 20px;">INGRESA TU EMAIL</label>
+          <input type="email" class="form-control" style="width: 300px;" id="gmail" placeholder="Ejemplo123@gmail.com" required>
+        </div><br>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="nomtitular" class="form-label text-warning" style="font-size: 20px;">NOMBRE DEL TITULAR DE LA CUENTA</label>
+              <input type="text" class="form-control" style="width: 170px;" id="nomtitular" placeholder="Ariel Carbajal" required>
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="numtarjeta" class="form-label text-warning" style="font-size: 20px;">NUMERO DE TARJETA</label>
+              <input type="text" class="form-control" style="width: 250px;" id="numtarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+            </div>
+          </div>
+        </div><br>
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="fechaven" class="form-label text-warning" style="font-size:20px;">FECHA DE VENCIMIENTO</label>
+                <input type="text" class="form-control" style="width: 80px;" id="fechaven" placeholder="02/06" required>
               </div>
-              <div class="col">
-                <h5 class="text-warning bg-dark" style="width: 260px;">MODALIDADES DISPONIBLES</h5>
-                <select id="combo-box2" class="form-control" style="width: 160px;">
-                  <option value="opcion1">Escoge tu formato</option>  
-                  <option value="opcion1">2D</option>
-                  <option value="opcion2">3D</option>
-                </select>
+            </div>
+            <div class="col">
+              <div class="mb-3">
+                <label for="cvc" class="form-label text-warning" style="font-size:20px;">CVC</label>
+                <input type="text" class="form-control" style="width: 70px;" id="cvc" placeholder="XXX" required>
+                <button type="submit" id="botonpagar" class="btn btn-primary" style="float: right;" onclick="verificarFormulario(event)">PAGAR</button>
               </div>
-              <div class="col">
-                <h5 class="text-warning bg-dark" style="width: 96px;">CANTIDAD</h5>
-                <select id="combo-box3" class="form-control" style="width: 160px;">
-                  <option value="opcion1">Escoge la cantidad</option>  
-                  <option value="opcion2">1</option>
-                  <option value="opcion3">2</option>
-                  <option value="opcion4">3</option>
-                  <option value="opcion5">4</option>
-                  <option value="opcion6">5</option>
-                  <option value="opcion7">6</option>
-                </select>
+            </div>
+          </div> 
+        </form>  
+        <div class="modal fade" id="modalform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-dark">
+                <h5 class="modal-title text-warning" id="exampleModalLabel">CINEXPERIENCE</h5>
+                <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="col">
-                <h5 class="text-warning bg-dark" style="width: 66px;">PRECIO</h5>
-                <input type="text" class="form-control" style="width: 150px;" id="casilla" value="" readonly>
+              <div class="modal-body bg-secondary text-white" align="center">
+                ¡Muchas gracias por tu preferencia, esperamos verte pronto!
+              </div>
+              <div class="modal-footer bg-dark text-warning">
+                <a href="C:\proyectoFinal/index.html" style="color: #ffffff; background-color: #007bff;
+                padding: 10px 20px; text-decoration: none; border-radius: 4px;">PAGAR</a>
               </div>
             </div>
           </div>
         </div>  
-    </div>    
+    </div>
+  </div>    
 <!------------------------------------------------------------------------------------------------------------------------------------>          
 <!------------------------------------------------------------------------------------------------------------------------------------>
     <div class="movie" id="Guardianes de la Galaxia" >
@@ -403,63 +524,104 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="text-warning bg-dark" style="width: 221px;">HORARIOS DISPONIBLES</h5>
-                    <select id="combo-box1" class="form-control" style="width: 150px;">
-                      <option value="opcion1">Escoge tu horario</option>
-                      <option value="opcion2">8:15 am</option>
-                      <option value="opcion3">11:00 am</option>
-                      <option value="opcion4">1:30 pm</option>
-                      <option value="opcion5">3:15 pm</option>
-                      <option value="opcion6">5:45 pm</option>
-                      <option value="opcion7">7:00 pm</option>
-                    </select>
+        </div>
+        <div class="container form-control bg-dark"><br>
+          <form>
+              <div class="row">
+                <div class="col">
+                  <h5 class="text-warning">HORARIOS DISPONIBLES</h5>
+                  <select id="combo-box1" class="form-select" style="width: 180px;" required>
+                    <option value="">Escoge tu horario</option>
+                    <option value="opcion1">8:15 am</option>
+                    <option value="opcion2">11:00 am</option>
+                    <option value="opcion3">1:30 pm</option>
+                    <option value="opcion4">3:15 pm</option>
+                    <option value="opcion5">5:45 pm</option>
+                    <option value="opcion6">7:00 pm</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <h5 class="text-warning" style="width: 300px;">MODALIDADES DISPONIBLES</h5>
+                  <select id="combo-box2p4" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
+                      <option value="">Escoge tu formato</option>  
+                      <option value="2D">2D</option>
+                      <option value="3D">3D</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <h5 class="text-warning" style="width: 260px;">CANTIDAD DE ENTRADAS</h5>
+                  <select id="combo-box3p4" class="form-select" style="width: 180px;" required onchange="handleComboBoxChange()">
+                    <option value="">Escoge la cantidad</option>  
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <h5 class="text-warning">TOTAL A PAGAR</h5>
+                  <input type="text" class="form-control" style="width: 150px;" id="casillap4" value="$" readonly required>
+                </div>
+              </div><br><br>
+            <div class="mb-3">
+              <label for="gmail" class="form-label text-warning" style="font-size: 20px;">INGRESA TU EMAIL</label>
+              <input type="email" class="form-control" style="width: 300px;" id="gmail" placeholder="Ejemplo123@gmail.com" required>
+            </div><br>
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="nomtitular" class="form-label text-warning" style="font-size: 20px;">NOMBRE DEL TITULAR DE LA CUENTA</label>
+                  <input type="text" class="form-control" style="width: 170px;" id="nomtitular" placeholder="Ariel Carbajal" required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="numtarjeta" class="form-label text-warning" style="font-size: 20px;">NUMERO DE TARJETA</label>
+                  <input type="text" class="form-control" style="width: 250px;" id="numtarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                </div>
+              </div>
+            </div><br>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="fechaven" class="form-label text-warning" style="font-size:20px;">FECHA DE VENCIMIENTO</label>
+                    <input type="text" class="form-control" style="width: 80px;" id="fechaven" placeholder="02/06" required>
                   </div>
-                  <div class="col">
-                    <h5 class="text-warning bg-dark" style="width: 260px;">MODALIDADES DISPONIBLES</h5>
-                    <select id="combo-box2" class="form-control" style="width: 150px;">
-                        <option value="opcion1">Escoge tu formato</option>  
-                        <option value="opcion1">2D</option>
-                        <option value="opcion2">3D</option>
-                    </select>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="cvc" class="form-label text-warning" style="font-size:20px;">CVC</label>
+                    <input type="text" class="form-control" style="width: 70px;" id="cvc" placeholder="XXX" required>
+                    <button type="submit" id="botonpagar" class="btn btn-primary" style="float: right;" onclick="verificarFormulario(event)">PAGAR</button>
                   </div>
-                  <div class="col">
-                    <h5 class="text-warning bg-dark" style="width: 96px;">CANTIDAD</h5>
-                    <select id="combo-box3" class="form-control" style="width: 160px;">
-                      <option value="opcion1">Escoge la cantidad</option>  
-                      <option value="opcion2">1</option>
-                      <option value="opcion3">2</option>
-                      <option value="opcion4">3</option>
-                      <option value="opcion5">4</option>
-                      <option value="opcion6">5</option>
-                      <option value="opcion7">6</option>
-                    </select>
+                </div>
+              </div> 
+            </form>  
+            <div class="modal fade" id="modalform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-warning" id="exampleModalLabel">CINEXPERIENCE</h5>
+                    <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="col">
-                    <h5 class="text-warning bg-dark" style="width: 66px;">PRECIO</h5>
-                    <input type="text" class="form-control" style="width: 150px;" id="casilla" value="" readonly>
+                  <div class="modal-body bg-secondary text-white" align="center">
+                    ¡Muchas gracias por tu preferencia, esperamos verte pronto!
+                  </div>
+                  <div class="modal-footer bg-dark text-warning">
+                    <a href="C:\proyectoFinal/index.html" style="color: #ffffff; background-color: #007bff;
+                    padding: 10px 20px; text-decoration: none; border-radius: 4px;">PAGAR</a>
                   </div>
                 </div>
               </div>
             </div>  
         </div>
+    </div>
     <!------------------------------------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------------------------------------------------------>
 
 
-
-
-
-
-
-
-
-
-
-
-    
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         crossorigin="anonymous"></script>
@@ -532,24 +694,111 @@ comboBox.addEventListener("change", function() {
     </script>
 
     <script>
+      
+      var movieName = params.get('movie');
+
+      /*PELICULA 1*/
+      var comboBox2p1 = document.getElementById("combo-box2p1");
+      var comboBox3p1 = document.getElementById("combo-box3p1");
+      comboBox2p1.addEventListener("change", handleComboBoxChange);
+      comboBox3p1.addEventListener("change", handleComboBoxChange); 
+
+      /*PELICULA 2*/
+      var comboBox2p2 = document.getElementById("combo-box2p2");
+      var comboBox3p2 = document.getElementById("combo-box3p2");
+      comboBox2p2.addEventListener("change", handleComboBoxChange);
+      comboBox3p2.addEventListener("change", handleComboBoxChange); 
+
+      /*PELICULA 3*/
+      var comboBox2p3 = document.getElementById("combo-box2p3");
+      var comboBox3p3 = document.getElementById("combo-box3p3");
+      comboBox2p3.addEventListener("change", handleComboBoxChange);
+      comboBox3p3.addEventListener("change", handleComboBoxChange); 
+
+      /*PELICULA 4*/
+      var comboBox2p4 = document.getElementById("combo-box2p4");
+      var comboBox3p4 = document.getElementById("combo-box3p4");
+      comboBox2p4.addEventListener("change", handleComboBoxChange);
+      comboBox3p4.addEventListener("change", handleComboBoxChange);
+
     function handleComboBoxChange() {
-    var comboBox2 = document.getElementById("combo-box2");
-    var opcionSeleccionada1 = comboBox2.value;
+      var opcionSeleccionada1;
+      var opcionSeleccionada2; 
+      var totalpago;
 
-    var comboBox3 = document.getElementById("combo-box3");
-    var opcionSeleccionada2 = comboBox3.value;
+      if (movieName === 'Transformers') {
+        opcionSeleccionada1 = comboBox2p1.value;
+        opcionSeleccionada2 = comboBox3p1.value; 
 
-    var totalpago;
+        if (opcionSeleccionada1 === '2D') {    
+          totalpago = opcionSeleccionada2 * 5;
+        } else if (opcionSeleccionada1 === '3D') {
+          totalpago = opcionSeleccionada2 * 6.5;
+        }
+        document.getElementById("casillap1").value = "$" + totalpago;
 
-    if(opcionSeleccionada1 === 'opcion1'){    
-      totalpago = opcionSeleccionada2 * 5;
-    }else if(opcionSeleccionada1 === 'opcion2'){
-      totalpago = opcionSeleccionada2 *6.5;
+      } else if (movieName === 'Spiderman') {
+        opcionSeleccionada1 = comboBox2p2.value;
+        opcionSeleccionada2 = comboBox3p2.value;
+
+        if (opcionSeleccionada1 === '2D') {    
+          totalpago = opcionSeleccionada2 * 5;
+        } else if (opcionSeleccionada1 === '3D') {
+          totalpago = opcionSeleccionada2 * 6.5;
+        }
+        document.getElementById("casillap2").value = "$" + totalpago;
+
+      } else if (movieName === 'Super Mario Bros') {
+        opcionSeleccionada1 = comboBox2p3.value;
+        opcionSeleccionada2 = comboBox3p3.value;
+
+        if (opcionSeleccionada1 === '2D') {    
+          totalpago = opcionSeleccionada2 * 5;
+        } else if (opcionSeleccionada1 === '3D') {
+          totalpago = opcionSeleccionada2 * 6.5;
+        }
+        document.getElementById("casillap3").value = "$" + totalpago;
+
+      } else if (movieName === 'Guardianes de la Galaxia') {
+        opcionSeleccionada1 = comboBox2p4.value;
+        opcionSeleccionada2 = comboBox3p4.value;
+
+        if (opcionSeleccionada1 === '2D') {    
+          totalpago = opcionSeleccionada2 * 5;
+        } else if (opcionSeleccionada1 === '3D') {
+          totalpago = opcionSeleccionada2 * 6.5;
+        }
+        document.getElementById("casillap4").value = "$" + totalpago;
+      }
+
+      
     }
 
-    document.getElementById("casilla").value = totalpago;
-    }
     </script>
+
+<script>
+  function verificarFormulario() {
+
+    event.preventDefault();
+    var horarioSeleccionado = document.getElementById("combo-box1").value;
+    var formatoSeleccionado = document.getElementById("combo-box2").value;
+    var cantidadSeleccionada = document.getElementById("combo-box3").value;
+    var email = document.getElementById("gmail").value;
+    var nombreTitular = document.getElementById("nomtitular").value;
+    var numeroTarjeta = document.getElementById("numtarjeta").value;
+    var fechaVencimiento = document.getElementById("fechaven").value;
+    var cvc = document.getElementById("cvc").value;
+    var camposFaltantes = [];
+    
+    if (horarioSeleccionado && formatoSeleccionado && cantidadSeleccionada && email && nombreTitular && numeroTarjeta && fechaVencimiento && cvc) {
+      // Formulario completo, abrir el modal
+      var modal = new bootstrap.Modal(document.getElementById("modalform"));
+      modal.show();
+    }
+  }
+</script>
+
+
 </body>
 
 </html>
