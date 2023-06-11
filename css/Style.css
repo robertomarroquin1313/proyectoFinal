@@ -43,7 +43,7 @@
   }
 
   .bg-image {
-    background-image: url("C:\Users\Ariel Carbajal\Documents\GitHub\images\fondos\imgbg4.jpg");
+    background-image: url("\proyectoFinal\images\fondos\imgbg4.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
