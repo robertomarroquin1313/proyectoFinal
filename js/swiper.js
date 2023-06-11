@@ -1,32 +1,22 @@
- function initializeSwiper(){
-
-src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-crossorigin="anonymous"    
-  
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-        crossorigin="anonymous"
-
-src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
-
-        const swiper = new Swiper('.swiper', {
-            // Parámetros opcionales
-            direction: 'horizontal',
-            loop: true,
-
-            // Paginación
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Botones de navegación
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // Barra de desplazamiento
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-    }
+function initializeSwiper(){
+  const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+    
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+          delay: 3000, // Tiempo en milisegundos entre cada cambio de slide
+          disableOnInteraction: false, // Permite la interacción del usuario con el swiper mientras se está reproduciendo automáticamente
+      },
+    });
+}
