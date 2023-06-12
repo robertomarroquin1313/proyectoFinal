@@ -136,6 +136,11 @@
         <center><h5 class="text-warning bg-dark" style="width: 370px;">¡Haz click en la imagen de la pelicula que <br>
             deseas ver para comprar tus entradas!</h5></center>
         <br>
+        <ul class="cat">
+            <li><a href="" onclick="showCategory('action')">ACCION</a></li>
+            <li><a href="" onclick="showCategory('comedy')">COMEDIA</a></li>
+            <li><a href="" onclick="showCategory('drama')">DRAMA</a></li>
+        </ul><br>
         <div class="row">
             <div class="col-md-3">
                 <div class="card mb-4">
@@ -212,6 +217,8 @@
                 el: '.swiper-scrollbar',
             },
         });
+
+        
     </script>
             <script>
                 function showCategory(categoryName) {
