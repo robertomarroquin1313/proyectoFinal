@@ -131,16 +131,71 @@
   </div>
 
 
-    <div class="container">
+<div class="container">
         <center><h1 class="text-white">NUESTRAS FUNCIONES</h1></center>
         <center><h5 class="text-warning bg-dark" style="width: 370px;">¡Haz click en la imagen de la pelicula que <br>
             deseas ver para comprar tus entradas!</h5></center>
         <br>
-        <ul class="cat">
-            <li><a href="" onclick="showCategory('action')">ACCION</a></li>
-            <li><a href="" onclick="showCategory('comedy')">COMEDIA</a></li>
-            <li><a href="" onclick="showCategory('drama')">DRAMA</a></li>
+        <center><h3 class="text-white">Selecciona una categoria</h3></center>
+        <br>
+        <ul class="cat bg-dark" style="width: 800px;">
+            <li><a class="text-warning" onclick="showCategory('todas')">TODAS LAS PELICULAS</a></li>
+            <li><a class="text-warning" onclick="showCategory('action')">ACCION</a></li>
+            <li><a class="text-warning" onclick="showCategory('comedy')">COMEDIA</a></li>
+            <li><a class="text-warning" onclick="showCategory('familiar')">FAMILIAR</a></li>
+            <li><a class="text-warning" onclick="showCategory('drama')">DRAMA</a></li>
         </ul><br>
+    
+        <div id="todas" class="category">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <a href="compras.html?movie=Transformers">
+                        <img src="C:\proyectoFinal\images\transformers.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
+                            height="400">
+                        </a>    
+                        <div class="card-body">
+                            <h5 class="card-title" align="center">Transformers</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <a href="compras.html?movie=Super Mario Bros">
+                        <img src="C:\proyectoFinal\images\mario.jpg" class="card-img-top" alt="MARIO BROS" width="50"
+                        height="400">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title" align="center">Super Mario Bros</h5>
+                        </div>             
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <a href="compras.html?movie=Spiderman">
+                        <img src="C:\proyectoFinal\images\spiderm.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
+                            height="400">
+                        </a>    
+                        <div class="card-body">
+                            <h5 class="card-title" align="center">Spider-Man: a través del Spider-Verso</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <a href="compras.html?movie=Guardianes de la Galaxia">
+                        <img src="C:\proyectoFinal\images\ggV3.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
+                            height="400">
+                        </a>    
+                        <div class="card-body">
+                            <h5 class="card-title" align="center">Guardianes Galaxia Vol 3</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="action" class="category">
         <div class="row">
             <div class="col-md-3">
                 <div class="card mb-4">
@@ -175,19 +230,74 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div id="comedy" class="category">
+        <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <a href="compras.html?movie=Super Mario Bros">
+                        <img src="C:\proyectoFinal\images\mario.jpg" class="card-img-top" alt="MARIO BROS" width="50"
+                        height="400">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title" align="center">Super Mario Bros</h5>
+                        </div>             
+                    </div>
+                </div>
             <div class="col-md-3">
                 <div class="card mb-4">
-                    <a href="compras.html?movie=Super Mario Bros">
-                    <img src="C:\proyectoFinal\images\mario.jpg" class="card-img-top" alt="MARIO BROS" width="50"
-                    height="400">
-                    </a>
+                    <a href="compras.html?movie=Guardianes de la Galaxia">
+                    <img src="C:\proyectoFinal\images\ggV3.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
+                        height="400">
+                    </a>    
                     <div class="card-body">
-                        <h5 class="card-title" align="center">Super Mario Bros</h5>
-                    </div>             
+                        <h5 class="card-title" align="center">Guardianes Galaxia Vol 3</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <a href="compras.html?movie=Spiderman">
+                    <img src="C:\proyectoFinal\images\spiderm.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
+                        height="400">
+                    </a>    
+                    <div class="card-body">
+                        <h5 class="card-title" align="center">Spider-Man: a través del Spider-Verso</h5>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="familiar" class="category">
+        <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <a href="compras.html?movie=Super Mario Bros">
+                        <img src="C:\proyectoFinal\images\mario.jpg" class="card-img-top" alt="MARIO BROS" width="50"
+                        height="400">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title" align="center">Super Mario Bros</h5>
+                        </div>             
+                    </div>
+                </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <a href="compras.html?movie=Spiderman">
+                    <img src="C:\proyectoFinal\images\spiderm.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
+                        height="400">
+                    </a>    
+                    <div class="card-body">
+                        <h5 class="card-title" align="center">Spider-Man: a través del Spider-Verso</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
     
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
