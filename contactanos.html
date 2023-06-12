@@ -67,9 +67,9 @@
     <div class="modal fade" id="Registro" tabindex="-1" aria-labelledby="Registro" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="Registro">Registro de Usuario</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header bg-dark">
+              <h1 class="modal-title fs-5 text-white" id="Registro">Registro de Usuario</h1>
+              <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form>
@@ -107,9 +107,9 @@
 <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="Login" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="Login">Inicio Sesion</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header bg-dark">
+          <h1 class="modal-title fs-5 text-white" id="Login">Inicio Sesion</h1>
+          <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <form>
@@ -174,6 +174,12 @@
         </div>
       </div>
   </div>
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   
   <script>
     function verificarFormulario() {
@@ -183,12 +189,12 @@
         var comentario = document.getElementById("comenta").value;
 
         if(email && comentario){
-            var modal = new window.Modal(document.getElementById("modalform"));
+            var modal = new bootstrap.Modal(document.getElementById("modalform"));
             modal.show();
         }
     }
   </script>
   
-</body>
+</body> 
 
 </html>
