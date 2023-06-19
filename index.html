@@ -12,16 +12,16 @@
 
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="css/Style.css">
-    
+
     <!-- JS personalizado -->
-    <script type="text/javascript" src="/proyectoFinal/js/swiper.js""></script>
+    <script type="text/javascript" src="/proyectoFinal/js/swiper.js"></script>
 </head>
 
-<body>
+<body class="bg-secondary">
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="25" fill="currentColor"
                     class="bi bi-camera-reels" viewBox="0 0 16 16">
                     <!-- contenido del SVG -->
@@ -46,30 +46,30 @@
                               <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Registro">Registrarse</button></li>
                               <li><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Login">Iniciar Sesion</button></li>
                             </ul>
-                          </div>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">PELICULAS</a>
-                    </li>
-                
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">CATALOGO</a>
+                        <a class="nav-link active" href="C:\proyectoFinal/index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">CONTACTOS</a>
+                        <a class="nav-link active" href="C:\proyectoFinal/peliculas.html">PELICULAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="C:\proyectoFinal/contactanos.html">CONTACTANOS</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <br>
 
-       <!-- Modal para Registro -->
+    <!-- Modal para Registro -->
     <div class="modal fade" id="Registro" tabindex="-1" aria-labelledby="Registro" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="Registro">Registro de Usuario</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header bg-dark">
+              <h1 class="modal-title fs-5 text-white" id="Registro">Registro de Usuario</h1>
+              <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form>
@@ -94,7 +94,7 @@
             </div>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-primary">
+              <button type="submit" class="btn btn-secondary">
                 Enviar
               </button>
             </div>
@@ -107,9 +107,9 @@
 <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="Login" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="Login">Inicio Sesion</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header bg-dark">
+          <h1 class="modal-title fs-5 text-white" id="Login">Inicio Sesion</h1>
+          <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <form>
@@ -124,7 +124,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" class="btn btn-secondary">
             Enviar
           </button>
         </div>
@@ -132,122 +132,109 @@
       </div>
     </div>
   </div>
-    <div class="bg-image">
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="C:\proyectoFinal\images\swipermario1.jpg" 
+            width="650" height="300"></div>
+            <div class="swiper-slide"><img src="C:\proyectoFinal\images\swiperfastx.jpeg" 
+            width="650" height="300"></div>
+            <div class="swiper-slide"><img src="C:\proyectoFinal\images\swipertrf.jpg" 
+                width="650" height="300"></div>
+            <!-- ... -->
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="container">
         <br>
-           <!-- Slider main container -->
-           <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <!-- ... -->
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-           
-            </div>
-            <br>
-            <br>
-            <div class="container">
-                <h1 class="text-white" align="center">CATALOGO DE PELICULAS</h1>
-                <br>
-                <h3 class="text-white">CINEMARK</h3>
-                <h2 class="text-white">CARTELERA SEMANAL</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="/proyectoFinal/images/cinemark/mario.jpg" class="card-img-top" alt="MARIO BROS" width="50" height="400">
-                            <div class="card-body">
-                                <h5 class="card-title">Super Mario Bros</h5>
-                                <p class="card-text">La pelicula cuenta la historia de Mario y Luigi,
-                                dos hermanos que viajan a un mundo oculto para   rescatar a la Princesa Peach,
-                                capturada por el malvado Rey Bowser.</p>
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="/proyectoFinal/images/cinemark/ggV3.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
-                            height="400">
-                            <div class="card-body">
-                                <h5 class="card-title">Guardianes Galaxia Vol 3</h5>
-                                <p class="card-text">La querida banda de Guardianes se instala en Knowhere.
-                                Pero sus vidas no tardan en verse alteradas por los ecos del
-                                turbulento pasado de Rocket.</p>
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="/proyectoFinal/images/cinemark/ggV3.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
-                            height="400">
-                            <div class="card-body">
-                                <h5 class="card-title">Guardianes Galaxia Vol 3</h5>
-                                <p class="card-text">La querida banda de Guardianes se instala en Knowhere.
-                                Pero sus vidas no tardan en verse alteradas por los ecos del
-                                turbulento pasado de Rocket.</p>
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <h3 class="text-white">CINEPOLIS</h3>
-                    <h2 class="text-white">CARTELERA SEMANAL</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card mb-4">
-                                <img src="/proyectoFinal/images/cinepolis/Fastx.jpg" class="card-img-top" alt="Rapidos y Furiosos X" width="50" height="600">
-                                <div class="card-body">
-                                <h5 class="card-title">Rapidos y Furiosos X</h5>
-                                <p class="card-text">Dominic Toretto ahora tiene la responsabilidad de proteger a su familia de un nuevo  villano llamado Dante (Jason Momoa),
-                                el cual resulta ser el hijo del antiguo mafioso y narcotraficante brasileño Hernán Reyes, quien ha estado planeando su venganza por la muerte de su padre durante los últimos 
-                                doce años . </p>
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4">
-                            <img src="/proyectoFinal/images/cinepolis/sirenita.jpg" class="card-img-top" alt="La Sirenita" width="50"
-                            height="600">
-                            <div class="card-body">
-                                <h5 class="card-title">La Sirenita</h5>
-                                <p class="card-text">Ariel, desea saber más sobre el mundo más allá del mar y,
-                                mientras visita la superficie, se enamora del Príncipe Eric. Si bien las sirenas tienen prohibido interactuar con los humanos,
-                                Así, hace un trato con la  bruja del mar, Úrsula, que le da la oportunidad de experimentar la vida en la tierra.
-                                </p>
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                            </div>
-                            </div>
-                        </div>
-            <div class="col-md-4">
+        <br>
+        <center><h1 class="text-white">PELICULAS DE CARTELERA</h1></center>
+        <center><a href="C:\proyectoFinal/peliculas.html" 
+        style="text-decoration: none;">
+        <h5 class="text-warning bg-dark" style="width: 400px;">¡Haz click AQUI para comprar tus entradas!</h5>
+        </a></center>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
                 <div class="card mb-4">
-                    <img src="/proyectoFinal/images/cinepolis/SAO.jpg" class="card-img-top" alt="SAO2 - Scherzo de una profunda oscuridad" width="50"
-                        height="600">
+                    <img src="C:\proyectoFinal\images\transformers.jpg" class="card-img-top" alt="Transformers" width="50" height="400">
                     <div class="card-body">
-                        <h5 class="card-title">SAO2 - Scherzo de una profunda oscuridad</h5>
-                        <p class="card-text">Han pasado dos meses desde que comenzó el juego mortal, y Kirito y Asuna han seguido progresando.
-                             Se detienen en busca de un tesoro, pero luego deben enfrentarse al monstruo menos favorito de Asuna.</p>
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                        <h5 class="card-title" align="center">Transformers</h5>
+                        <p class="card-text">Transformers. El despertar de las bestias llevara al publico
+                            a una aventura alrededor del mundo en los 90 con los
+                            Autobots e introducira a una nueva generacion
+                            de Transformers, los Maximals, para unirlos en la
+                            batalla existente por la tierra.</p>
                     </div>
                 </div>
             </div>
-             </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="C:\proyectoFinal\images\spiderm.jpg" class="card-img-top" alt="Transformers" width="50" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title" align="center">Spider-Man: a través del Spider-Verso</h5>
+                        <p class="card-text">Miles Morales emprende una aventura a traves 
+                            del multiverso con Gwen Stacy y un nuevo equipo de la
+                            Spider People que deben enfrentar a un poderoso villano.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="C:\proyectoFinal\images\ggV3.jpg" class="card-img-top" alt="Guardianes Galaxia Vol 3" width="50"
+                        height="400">
+                    <div class="card-body">
+                        <h5 class="card-title" align="center">Guardianes Galaxia Vol 3</h5>
+                        <p class="card-text">La querida banda de Guardianes se instala en Knowhere.
+                            Pero sus vidas no tardan en verse alteradas por los ecos del
+                            turbulento pasado de Rocket.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="C:\proyectoFinal\images\mario.jpg" class="card-img-top" alt="MARIO BROS" width="50" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title" align="center">Super Mario Bros</h5>
+                        <p class="card-text">La pelicula cuenta la historia de Mario y Luigi,
+                            dos hermanos que viajan a un mundo oculto para rescatar a la Princesa Peach,
+                            capturada por el malvado Rey Bowser.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="C:\proyectoFinal\images\Fastx.jpg" class="card-img-top" alt="Rapido y Furioso" width="50" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title" align="center">Rapidos y Furiosos X</h5>
+                        <p class="card-text">Dominic Toretto ahora tiene la responsabilidad de proteger 
+                        a su equipo y a su familia de un nuevo y peligroso villano llamado Dante, 
+                        el cual resulta ser el hijo del antiguo mafioso y narcotraficante brasileno Hernan Reyes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="C:\proyectoFinal\images\sirenita.jpg" class="card-img-top" alt="La Sirenita" width="50" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title" align="center">La Sirenita</h5>
+                        <p class="card-text">LA SIRENITA es la querida historia de Ariel, 
+                        una sirena joven y apasionada con ansias de aventuras. 
+                        Ella es la mas joven y rebelde de las hijas del rey Triton, y suena con 
+                        descubrir el mundo mas alla del mar.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    
     </div>
-
-
+    
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         crossorigin="anonymous"></script>
@@ -255,9 +242,50 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
+        const swiper = new Swiper('.swiper', {
+            // Parámetros opcionales
+            direction: 'horizontal',
+            loop: true,
+
+            // Paginación
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Botones de navegación
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Barra de desplazamiento
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>    
+    <script>
         initializeSwiper()
-        Swiper()
+        swiper()
     </script>
+
+        <footer>
+            <br>
+            <div class="social-links bg-dark" style="height: 130px" align="center">
+                <br>
+                <h3 class="text-white" style="font-size: 24px;">Nuestas Redes Sociales</h3> 
+                <a href="https://www.facebook.com/tu_pagina_de_facebook" target="_blank" class="text-white" style="text-decoration: none;">
+                  <img src="C:\proyectoFinal\images\iconface.png" style="width: 50px; height: 50px;" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tu_perfil_de_instagram" target="_blank" class="text-white" style="text-decoration: none;">
+                  <img src="C:\proyectoFinal\images\iconinsta.png" style="width: 50px; height: 50px;" alt="Instagram">
+                </a>
+                <a href="https://www.twitter.com/tu_perfil_de_twitter" target="_blank" class="text-white" style="text-decoration: none;">
+                  <img src="C:\proyectoFinal\images\icontwitter.png" style="width: 60px; height: 50px;" alt="Twitter">
+                </a>
+              </div>
+
+        </footer>
 
 </body>
 
